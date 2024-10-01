@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:padding="10dp">
+
+
+        <!-- Title TextView beside the Left Icon -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:text="MainActivity"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <!-- Right Icon -->
+        <ImageView
+            android:id="@+id/rightIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icons8_ellipsis_stroke_v_96"
+            android:contentDescription="Right Icon" />
+
+    </RelativeLayout>
+
+
+    <!-- ListView -->
+    <ListView
+        android:id="@+id/foodListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dividerHeight="1dp"
+        android:divider="@android:color/darker_gray" />
+    <Button
+        android:id="@+id/btnOrderFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cornerRadius="0dp"
+        android:textSize="20dp"
+        android:layout_marginBottom="15dp"
+        android:text="Đặt món" />
+</LinearLayout>
